@@ -13,3 +13,10 @@ mvn package
 ``
 docker-compose up
 ``
+
+When the application is up, simply open your browser and call: 
+
+http://localhost:8081/war/rest/spark/trigger?triggerUser=$TRIGGER_USER
+
+This should trigger a calculation which will result on a result file being written
+into "/apps/output" within the docker container.
